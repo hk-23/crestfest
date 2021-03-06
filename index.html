@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Crest Fest | PSG CAS |</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="An Inter-College virtual tech festival">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet"/>
+	<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+.merienda {
+  font-family: "Merienda", cursive;
+}
+</style>
+<body>
+	
+	
+	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-b-30">
+
+		<div class="flex-col-c w-full p-t-120">
+			<h3 class="l1-txt1 txt-center p-b-10 merienda">
+				Crest Fest 2k21
+			</h3>
+
+			<p class="txt-center l1-txt2 p-b-20 wsize2">
+				PSG College of Arts and Science <br>
+				Dept of Computer Science
+			</p>
+
+			<h4 class="l1-txt2 txt-center p-t-40 merienda">
+				Registration Starts on 10th March, 2021 - 10:00 am
+			</h4>
+		</div>
+
+		<div class="flex-w flex-c cd100 wsize1 bor1">
+			<div class="flex-col-c-m size2 bg0 bor2">
+				<span class="l1-txt3 p-b-7" id="days">00</span>
+				<span class="s1-txt1">Days</span>
+			</div>
+
+			<div class="flex-col-c-m size2 bg0 bor2">
+				<span class="l1-txt3 p-b-7" id="hours">00</span>
+				<span class="s1-txt1">Hours</span>
+			</div>
+
+			<div class="flex-col-c-m size2 bg0 bor2">
+				<span class="l1-txt3 p-b-7" id="minutes">00</span>
+				<span class="s1-txt1">Minutes</span>
+			</div>
+
+			<div class="flex-col-c-m size2 bg0">
+				<span class="l1-txt3 p-b-7" id="seconds">00</span>
+				<span class="s1-txt1">Seconds</span>
+			</div>
+		</div>
+
+		<span class="s1-txt2 txt-center">
+			Crest Fest @ 2021
+		</span>
+	</div>
+
+
+
+	
+
+
+<!--===============================================================================================-->
+	<script >
+		$(document).ready(function () {
+  var countDownDate = new Date("Mar 10, 2021 10:00:00").getTime();
+  var x = setInterval(function () {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#minutes").text(minutes);
+    $("#seconds").text(seconds);
+  });
+});
+
+	</script>
+<!--===============================================================================================-->
+
+</body>
+</html>
