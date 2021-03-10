@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crest Fest - PSG CAS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Computer Science Department Event - 2021">
+    <link rel="icon" type="img/png" href="{% static 'img/cf_logo_only.webp' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Noto+Serif&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!-- Custom Css -->
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <!-- Custom Script -->
+    <script src="./static/js/script.js"></script>
+    {% block head %}
+
+    {% endblock %}
+    <style>
+  table,
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+
+<nav class="navbar navbar-expand-sm navbar-light mx-0 shadow w-100 bg-white fixed" style="z-index: 900;">
+        <a href="https://crestfest.tech" class="navbar-brand">
+          <img
+            class="rounded-lg inline-block"
+            src="./static/img/cf_logo2.png"
+            alt="cf logo"
+            style="width: 120px; height: auto;"
+          />
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#menubar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menubar">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a href="https://crestfest.tech" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="./events.html" class="nav-link">Events </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid px-0 d-flex flex-column pt-16" style="min-height: 100vh;">
+      <section class="container my-3">
+
+  <div class="grid grid-cols-1 space-10 rounded-3xl shadow my-4" id="geekspeak">
+
+    <!-- Geek Speak -->
+    <div class="row p-md-4 p-2">
+      <div class="col-6 col-lg-4">
+        <img class="w-50" src="./static/img/geekspeak_logo.webp">
+      </div>
+      <div class="col-6 col-lg-8 d-flex">
+        <div class="my-auto ml-auto">
+          <a href="https://forms.gle/orisTxYuHf5P1MZs5" class="btn text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 px-4 mx-2">Enroll</a>
+        </div>
+      </div>
+      <div class="col-12 px-md-4 py-2">
+        <p class="text-lg">“PRESENTATION AND PACKAGING IS EVERYTHING” i.e. presentation makes sense of your knowledge. CREST FEST provides you a platform in the name of GEEK SPEAK to unleash your talents by means of presentation and showcase your ideas in front of esteemed panel of Judges.</p>
+        <br>
+        <div class="">
+          <span class="font-semibold">Rounds : </span><span class="text-gray-500"></span>
+          <div>
+            <h5><u>Preliminary Selection:</u></h5>
+            <p>Candidates should send their Presentation to our E-mail ID on or before   date. Selected candidate will be intimated through their respective E-mail for final round</p>
+                  <h5><u>Finals:</u></h5>
+              <p>For the shortlisted participants through google meet platform.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Instructions :</p></div>
+        <ul class="px-3 list-disc">
+          <li>The contest is opened to all Registered candidates.</li>
+          <li>Multiple participants from same institution can participate.</li>
+          <li>Presentation should be submitted on individual basis. No shared work is allowed.</li>
+          <li>Only one presentation on any one of the topics is allowed for the participant.</li>
+          <li>The presentation which was submitted during registration have to be presented during the event.</li>
+          <li>The presentation should be in ppt format.</li>
+          <li>The participant will be given 5 minutes for presentation and 2 minutes for questioning session.</li>
+          <li>Plagiarized material will not be entertained.</li>
+          <li>Presentation should have slides between 10-15.</li>
+          <li>Selection process will be based on Originality and creativity, Organization of contents, Knowledge of the material, Clarity of the work and Oral Presentation.</li>
+          <li>Detail of the participant: Name, Year, Department, Institution, contact number and email-id, Topic should be mentioned in presentation.</li>
+        </ul>
+      </div>
+      <div class="m-4">
+        <h5><u>Note :</u></h5>
+        <p>
+          The judging panel reserves the rights to disqualify the participant, if any of the rules given above are breached by any participants.
+        </p>
+      </div>
+      <!-- <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Staff Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Student Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 space-10 rounded-3xl shadow my-3" id="ransack">
+    <!-- Ransack -->
+    <div class="row p-md-4 p-2">
+      <div class="col-6 col-lg-4">
+        <img class="w-60" src="./static/img/ransack_logo.webp">
+      </div>
+      <div class="col-6 col-lg-8 d-flex">
+        <div class="my-auto ml-auto">
+          <a href="https://forms.gle/orisTxYuHf5P1MZs5" class="btn text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 px-4 mx-2">Enroll</a>
+        </div>
+      </div>
+      <div class="col-12 px-md-4 py-2">
+        <p class="text-lg">By connecting the images find the hidden word.</p><br>
+        <div class="">
+          <span class="font-semibold">Rounds : </span><span class="text-gray-500">Prelims(12th March, 2021), Finals(13th March, 2021)</span>
+        </div>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Instructions :</p></div>
+        <ul class="px-3 list-disc">
+          <li>One participant per team. </li>
+          <li>Images will be displayed on the screen, participant should find the hidden word.</li>
+          <li><h5>Time duration :</h5>
+              <ol>
+              <li>Prelims 20 min</li>
+              <li>Finals 20 min</li>
+            </ol>
+          </li><br>
+          <li>
+            Questions will be divided into two sections:
+                        <table>
+              <thead>
+                <tr>
+                  <td>Sections</td>
+                  <td>PRELIMS</td>
+                  <td>FINALS</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>B</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Total Questions</td>
+                  <td>20</td>
+                  <td>20</td>
+                </tr>
+              </tbody>
+            </table>
+          </li><br>
+          <h5><b>Section A :</b>
+          <span>Two or more images will be 
+            displayed. The first half of the word will be displayed in 
+            first image and the other parts of the word will be in 
+            consecutive images. Participant should enter the final word 
+            by combining all of them.</span></h5>
+          <h5><b>Section B :</b>
+          <span>Two images will be displayed. The participant should find the common term from both the images.</span></h5>
+        </ul>
+      </div>
+      <!-- <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Staff Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Student Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 space-10 rounded-3xl shadow my-3" id="codetreasure">
+    <!-- Code Treasure -->
+    <div class="row p-md-4 p-2">
+      <div class="col-6 col-lg-4">
+        <img class="w-60" src="./static/img/code_treasure_logo.webp">
+      </div>
+      <div class="col-6 col-lg-8 d-flex">
+        <div class="my-auto ml-auto">
+          <a href="https://forms.gle/orisTxYuHf5P1MZs5" class="btn text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 px-4 mx-2">Enroll</a>
+        </div>
+      </div>
+      <div class="col-12 px-md-4 py-2">
+        <p class="text-lg">Code Treassure is an event which consists of various technical related questions like code shuffling,binary code ,spot the irrelevant line, technical quiz etc.</p><br>
+        <div class="">
+          <span class="font-semibold">Rounds : </span><span class="text-gray-500">Prelims(12th March, 2021), Finals(13th March, 2021)</span>
+        </div>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Instructions :</p></div>
+        <ul class="px-3 list-disc">
+          <li>Single participant.</li>
+          <li>Prelims consists of technical related 25 aptitude questions (computer Science).</li>
+          <li>Time duration for prelims: 20 minutes</li>
+          <li>Shortlisted participants will be confirmed through mail for finals.</li>
+          <li>Final will consist of 10 questions.</li>
+          <li>Time  duration for Final : 1hour.</li>
+          <li>Registered participants only allowed.</li>
+          <li>Students should have their college Id card and registration Id before logging in.</li>
+          <li>Top 2 Participants will be awarded with winner certificate.</li>
+          <li>E-Certificates will be provided for all the Participants.</li>
+          <li>For the Finals, Google meet Link for the event will be shared. Participants are requested to join with Camera & mike on.</li>
+        </ul>
+      </div>
+      <!-- <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Staff Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Student Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 space-10 rounded-3xl shadow my-3" id="impreza">
+    <!-- Impreza -->
+    <div class="row p-md-4 p-2">
+      <div class="col-6 col-lg-4">
+        <img class="w-60" src="./static/img/impreza_logo.webp">
+      </div>
+      <div class="col-6 col-lg-8 d-flex">
+        <div class="my-auto ml-auto">
+        
+          <a href="https://forms.gle/orisTxYuHf5P1MZs5" class="btn text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 px-4 mx-2">Enroll</a>
+        </div>
+      </div>
+      <div class="col-12 px-md-4 py-2">
+        <h5><b>DESCRIPTION: </b></h5>
+        <ul>
+          <li>Designing logos with Simple, Creative and Visually Attractive</li>
+          <li>This platform is for the creative buds to explore and showcase their talents.</li>
+        </ul>
+        <br>
+        <div class="">
+          <span class="font-semibold">Rounds : </span><span class="text-gray-500">Prelims(12th March, 2021), Finals(13th March, 2021)</span>
+        </div>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Instructions :</p></div>
+        <h6>    1.PRELIMS:  (DURATION – 40 Minutes) :</h6>
+                <ul class="px-3 list-disc">
+          <li>Sketch according to the themes in A4 sized paper and upload</li>
+          <li>Unique ideas will be considered.</li>
+          <li>Individuals are only permitted to participate. </li>
+          <li>Participants are requested to upload the image in the specified time only.</li>
+          <li>Time duration for the prelims is 40 minutes.</li>
+        </ul>
+        <br>
+        <h6>    2.FINALS:  (DURATION – 1 Hour) :</h6>
+        <ul class="px-3 list-disc">
+          <li>You can use any tools available.</li>
+          <li>Individual Participation only.</li>
+          <li>Participants are allowed to upload only JPEG format in the specified time only</li>
+        </ul>
+        <br>
+        <h5><u><b>NOTE:</b></u></h5>
+        <ul class="px-3 list-disc">
+          <li>Image copied from / Modified from any source will not be considered and participant will be eliminated</li>
+          <li>Switching between the tabs will be monitored.</li>
+                </ul> 
+      </div>
+      <!-- <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Staff Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Student Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 space-10 rounded-3xl shadow my-3" id="webdodger">
+    <!-- Web Dodger -->
+    <div class="row p-md-4 p-2">
+      <div class="col-6 col-lg-4">
+        <img class="w-60" src="./static/img/webdodger2.webp">
+      </div>
+      <div class="col-6 col-lg-8 d-flex">
+        <div class="my-auto ml-auto">
+          <a href="https://forms.gle/orisTxYuHf5P1MZs5" class="btn text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 px-4 mx-2">Enroll</a>
+        </div>
+      </div>
+      <div class="col-12 px-md-4 py-2">
+        <p class="text-lg">Attention grabbing .Brief and concrete information, Make it neat & clean.</p><br>
+        <div class="">
+          <span class="font-semibold">Rounds : </span><span class="text-gray-500">Prelims(12th March, 2021), Finals(13th March, 2021)</span>
+        </div>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Instructions :</p></div>
+        <ul class="px-3 list-disc">
+          <li>The contest is open only for registered candidates.</li>
+          <li>Multiple participants from same institution can participate.</li>
+          <li>Each participant should submit one entry only for the event</li>
+          <li>Any software may be used to make poster, the poster needs to be in .jpeg format or .jpg only.</li>
+          <li>Based on the given theme or quotation the poster should be submitted and the same should be in English only.</li>
+          <li>Participant name or identification mark must not appear on the E-poster.</li>
+          <li>There will be two rounds prelims and finals. The topics will be different for two rounds. Participants selected in prelims would be given another topic and the winners will be selected.</li>
+          <li>Decision taken by the organizing committee would be final.</li>
+          <li>All entries should be submitted on individual basis.</li>
+          <li>Entries must be submitted within the time bound. (Duration: 1 hour for both prelims and finals)</li>
+          <li>The posters need to be digital poster only, photographs of posters made on paper won’t be considered as digital poster.</li>
+          <li>(Format W*H=11”*17”)maximum either portrait or landscape is acceptable and Maximum file size should be: 4MB</li>
+          <li>Poster must be two dimensional, All E-poster should be original art work, no trademarked or copyrighted images or phrases should be use.</li>
+          <li>No shared work is allowed.</li>
+          <li>For the shortlisted students Google meet link will be given to join..</li>
+          <li>Switching between the tabs is not valid.</li>
+          <li>Webcam should be ON at all times with microphone.</li>
+          <li>Any participant found violating rules and regulation will be disqualified from competition.</li>
+        </ul>
+      </div>
+      <!-- <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Staff Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+      <div class="col-12 px-4 py-2">
+        <div><p class="text-lg font-semibold mb-2">Student Co-ordinators :</p></div>
+        <ul class="list-disc px-3">
+          <li>&nbsp;&nbsp;</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+</section>
+    </div>
+
+</body>
+
+</html>
